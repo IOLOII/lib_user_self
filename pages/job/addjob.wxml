@@ -1,0 +1,48 @@
+<form bindsubmit="formSubmit" bindreset="formReset">
+
+
+
+
+    <view class="section">
+    <view class="section__title">单位/发布人</view>
+    <input name="title" placeholder="please input here" />
+  </view>
+
+  <view class="section">
+    <view class="section__title">需求内容</view>
+    <input name="content" placeholder="please input here" />
+  </view>
+
+
+  <!-- <view class="section">
+    <view class="section__title">招聘截止</view>
+    <input name="timeliness" placeholder="please input here" />
+  </view> -->
+  <!-- 日期选择器 mode="date" -->
+<view class="fl_form">
+  <picker mode="date" name="timeliness" value="{{date}}" start="{{date}}" end="2039-12-01" bindchange="bindDateChange">
+  <view class="picker">
+    <text>招聘截止</text> <text class="chosedate">{{date}}</text>
+  </view>
+  </picker>
+</view>
+
+
+
+  <view class="section">
+    <view class="section__title">资薪</view>
+    <input name="extra" placeholder="please input here" />
+  </view>
+
+  <!-- 修改为当前自动获取日期，在表单提交的时候加入数据，或者新建一个hide的input 绑定自动获取时间的function -->
+  <view class="section">
+    <view class="section__title">日期</view>
+    <input name="footer" placeholder="please input here" />
+  </view>
+
+  <view class="btn-area">
+    <button formType="submit">Submit</button>
+    <button formType="reset">Reset</button>
+  </view>
+</form>
+

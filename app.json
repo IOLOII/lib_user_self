@@ -2,14 +2,39 @@
   "pages": [
     "pages/p/index",
     "pages/job/addjob",
+    "pages/shoelaces/chat",
     "pages/index/index",
     "pages/logs/logs"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
+    "navigationBarTitleText": "Yuey Site",
     "navigationBarTextStyle": "black"
   },
-  "sitemapLocation": "sitemap.json"
+  "sitemapLocation": "sitemap.json",
+  "usingComponents": {
+    "i-tab-bar": "../../dist/tab-bar/index",
+    "i-tab-bar-item": "../../dist/tab-bar-item/index"
+  },
+
+  "tabBar": {
+    "color":"#000",
+    "selectedColor":"#FFF",
+    "backgroundColor":"#ddd",
+  "position":"bottom",
+    "list": [{
+      "pagePath": "pages/p/index",
+      "text": "text"
+
+    },{
+      "pagePath": "pages/shoelaces/chat",
+      "text": "text"
+
+    },{
+      "pagePath": "pages/shoelaces/chat",
+      "text": "text"
+    }
+  ]
+  }
 }

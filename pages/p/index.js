@@ -6,21 +6,7 @@ Page({
    */
   data: {
     margintop:10,
-    array: [
-      {
-      //   title: "0工作名称",
-      // // },{
-      //   extra: "招聘一位派单的同学",
-      // // },{
-      //   thumb: "https://i.loli.net/2017/08/21/599a521472424.jpg",
-      // // },{
-      //   content: "今天是周一，西区食堂猪脚饭招聘一位派单同学，资薪13RMB/h",
-      // // },{
-      //   footer: "yueysite"
-      
-      }
-    ],
-    ress:[{}]
+    array: []
   },
 
   /**
@@ -47,8 +33,7 @@ Page({
                 [arraya]: res.data[i]
               })
             };
-            console.log(array);
-
+            // console.log(array);
       },
       fail: function(res) {},
       complete: function(res) {},

@@ -1,48 +1,41 @@
 <form bindsubmit="formSubmit" bindreset="formReset">
-
-
-
-
-    <view class="section">
-    <view class="section__title">单位/发布人</view>
-    <input name="title" placeholder="please input here" />
+    <view class="section cu-form-group margin-top">
+    <view class="section__title title">单位/发布人</view>
+    <input name="pubUnit" placeholder="西区一楼猪脚饭" placeholder-class="pcss" />
   </view>
-
-  <view class="section">
-    <view class="section__title">需求内容</view>
-    <input name="content" placeholder="please input here" />
+  <view class="section cu-form-group">
+    <view class="section__title title">需求内容</view>
+    <input name="pubContent" placeholder="招聘外卖配送员一位，中午11:40~13:40左右" placeholder-class="pcss" />
   </view>
-
+  <view class="section cu-form-group">
+    <view class="section__title title">资薪</view>
+    <input name="salary" placeholder="15RMB/h" placeholder-class="pcss" />
+  </view>
 
   <!-- <view class="section">
     <view class="section__title">招聘截止</view>
     <input name="timeliness" placeholder="please input here" />
   </view> -->
   <!-- 日期选择器 mode="date" -->
-<view class="fl_form">
-  <picker mode="date" name="timeliness" value="{{date}}" start="{{date}}" end="2039-12-01" bindchange="bindDateChange">
+<view class="fl_form cu-form-group">
+  <picker mode="date" name="timeLiness" value="{{date}}" start="{{date}}" end="2039-12-01" bindchange="bindDateChange">
   <view class="picker">
-    <text>招聘截止</text> <text class="chosedate">{{date}}</text>
+    <text class="title" style='text-align:auto'>招聘截止</text>
+    <text class="chosedate">{{date}}</text>
   </view>
   </picker>
 </view>
 
-
-
-  <view class="section">
-    <view class="section__title">资薪</view>
-    <input name="extra" placeholder="please input here" />
-  </view>
-
   <!-- 修改为当前自动获取日期，在表单提交的时候加入数据，或者新建一个hide的input 绑定自动获取时间的function -->
-  <view class="section">
-    <view class="section__title">日期</view>
-    <input name="footer" placeholder="please input here" />
+  <view class="section cu-form-group">
+    <view class="section__title title">发布日期</view>
+    <input name="pubTime" placeholder="系统自动生成" placeholder-class="pcss" value='{{pubTime}}'/>
   </view>
 
-  <view class="btn-area">
-    <button formType="submit">Submit</button>
-    <button formType="reset">Reset</button>
+  
+  <view class="btn-area ">
+    <button formType="submit">发布</button>
+    <button formType="reset">重置</button>
   </view>
 </form>
 
